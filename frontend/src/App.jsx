@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import './App.css'
 
 const DURATIONS = [0.1, 0.5, 2.0, 4.0, 8.0, 16.0];
-const API_BASE = `http://${window.location.hostname}:8000`;
+const API_BASE = "https://dusiandle-api.onrender.com";
 
 function App() {
   const [screen, setScreen] = useState('menu');
