@@ -656,7 +656,7 @@ def get_all_songs():
     """Zwraca listę wszystkich utworów z bazy na potrzeby podpowiedzi."""
     conn = sqlite3.connect("game.db")
     cursor = conn.cursor()
-    cursor.execute("SELECT artist, title FROM songs")
+    cursor.execute("SELECT DISTINCT artist, title FROM songs")
     rows = cursor.fetchall()
     conn.close()
     
